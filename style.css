@@ -12,7 +12,7 @@ header {
     align-items: center;
     padding: 15px 40px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(5, 5, 5, 0.05);
     position: relative;
  }
       
@@ -24,13 +24,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #334155;
+    color: #304c74;
     font-weight: 500;
     transition: color 0.3s;
  }
         
  nav ul li a:hover {
-     color: #18e6a1;
+     color: #15b17d;
  }
 
 .register-btn { 
@@ -95,8 +95,8 @@ nav ul li a {
 
 .register-btn2:hover {
       background-color: #86198f;
-   }
-
+   } 
+   /* --- Header & Navigation end --- */
 
 /* Meet the Speakers styles */
 
@@ -112,11 +112,12 @@ nav ul li a {
     margin-bottom:50px;
 }
 
+
 .speaker-container{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:30px;
-}
+} 
 
 .speaker-card{
     background:#fff;
@@ -158,7 +159,133 @@ nav ul li a {
     font-size:15px;
 }
 
-   
+/* PRICING Styling */
+
+.pricing-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #64748b;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* Flexbox Layout for Cards */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Base Card Styling */
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 35px 25px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Special Highlight for Pro Card */
+.card.featured {
+    border: 2px solid #2563eb;
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+}
+
+/* Badge styling */
+.badge {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    width: max-content;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.card.featured .badge {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+/* Price Tag styling */
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.per-person {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Feature List styling */
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Makes sure buttons line up perfectly */
+}
+
+.features li {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline:hover {
+    background-color: #eff6ff;
+}
+
+.btn-filled {
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    color: #ffffff;
+}
+
+.btn-filled:hover {
+    background-color: #1d4ed8;
+}
+
+
                 /*  pricing section*/
 
 
@@ -294,15 +421,77 @@ nav ul li a {
 .btn-blue:hover {
   background: #1e40af;
   border-color: #1e40af;
+}  */
+
+                                 /* FAQ Section */
+
+.faq{
+    padding: 200px 10%;
+    background: #ffffff;
 }
 
+.faq-container{
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.subtitle{
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+details{
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    background: #fff;
+    overflow: hidden;
+}
+
+summary{
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+summary::after{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: #2563eb;
+    transition: .3s;
+}
+
+details[open] summary::after{
+    content: "−";
+}
+
+details p{
+    padding: 0 20px 20px;
+    color: #6b7280;
+    line-height: 1.7;
+    border-top: 1px solid #e5e7eb;
+}                                 
 
 /* Footer style */
 
-
-
-/* ফুটার সেকশনের মূল স্টাইল */
-/* ফুটারের মূল ব্যাকগ্রাউন্ড এবং প্যাডিং */
 .site-footer {
   background-color: #0f172a; /* ডার্ক থিম কালার */
   color: #ffffff;            /* লেখার কালার সাদা */
@@ -310,53 +499,45 @@ nav ul li a {
   font-family: Arial, sans-serif;
 }
 
-/* ফুটারের ভেতরের কন্টেন্টকে মাঝে রাখার জন্য */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Flexbox দিয়ে লোগো বামে এবং সোশ্যাল লিংক ডানে নেওয়া হয়েছে */
 .footer-top {
   display: flex;
   justify-content: space-between; 
   align-items: center;
 }
 
-/* লোগো ইমেজের সাইজ নিয়ন্ত্রণ করার জন্য */
 .footer-logo img {
-  height: 40px; /* আপনার প্রয়োজন অনুযায়ী হাইট পরিবর্তন করতে পারেন */
+  height: 40px; 
   display: block;
 }
 
-/* সোশ্যাল আইকনগুলোর মাঝখানের দূরত্ব */
 .footer-socials {
   display: flex;
   gap: 15px;
 }
 
-/* আইকনগুলোর সাধারণ ডিজাইন */
 .footer-socials a {
-  color: #94a3b8; /* হালকা ধূসর কালার */
+  color: #5f7594;
   font-size: 20px;
   text-decoration: none;
-  transition: 0.3s; /* হোভার ইফেক্ট মসৃণ করার জন্য */
+  transition: 0.3s;
 }
 
-/* মাউস নিলে আইকনের কালার পরিবর্তন হবে */
 .footer-socials a:hover {
-  color: #38bdf8; /* স্কাই ব্লু কালার */
+  color: #38bdf8;
 }
 
-/* মাঝখানের সোজা দাগ (Horizontal Divider) এর ডিজাইন */
 .footer-divider {
   border: 0;
   height: 1px;
-  background-color: #334155; /* লাইনের কালার */
-  margin: 30px 0 20px 0;    /* উপরে ও নিচে স্পেস */
+  background-color: #334155; 
+  margin: 30px 0 20px 0;
 }
 
-/* কপিরাইট লেখাটি মাঝে নেওয়ার জন্য */
 .footer-bottom {
   text-align: center;
 }
@@ -366,7 +547,6 @@ nav ul li a {
   font-size: 14px;
 }
 
-/* মোবাইল রেসপনসিভ: স্ক্রিন ছোট হলে লোগো ও আইকন নিচে নিচে চলে আসবে */
 @media (max-width: 600px) {
   .footer-top {
     flex-direction: column;
@@ -375,147 +555,4 @@ nav ul li a {
 }
 
 
-
-
-/* লোগো বামে এবং সোশ্যাল লিংক ডানে নেওয়ার জন্য ফ্লেক্সবক্স *
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* রেসপন্সিভ করার জন্য *
-    gap: 20px;
-}
-
-.footer-logo h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* সোশ্যাল মিডিয়া আইকনের স্টাইল *
-.footer-socials a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 15px;
-    transition: color 0.3s ease;
-}
-
-/* মাউস হোভার করলে কালার চেঞ্জ হবে *
-.footer-socials a:hover {
-    color: #3b82f6; /* লাইট ব্লু কালার */
-}
-
-/* হরাইজন্টাল ডিভাইডার বা বর্ডার লাইনের স্টাইল *
-.footer-divider {
-    border: 0;
-    height: 1px;
-    background-color: #374151; /* হালকা গ্রে কালার */
-    margin: 30px 0 20px 0;
-}
-
-/* কপিরাইট মেসেজ নিচের সেন্টারে রাখার জন্য *
-.footer-bottom {
-    text-align: center;
-    font-size: 14px;
-    color: #9ca3af; /* টেক্সটের কালার একটু হালকা করা হয়েছে */
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer tags style */
-/* .my-footer {
-  background-color: #0f172a; /* background color blackish *
-  padding-top: 50px;
-  padding-bottom: 30px;
-  width: 100%;
-}
-
-.footer-inside {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-left-box {
-  width: 35%;
-  padding-left: 20px;
-}
-
-.footer-logo-text {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 15px;
-  font-family: 'Inter', sans-serif;
-}
-
-.footer-p-tag {
-  color: #94a3b8;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: 'Inter', sans-serif;
-}
-
-.footer-links-box {
-  display: flex;
-  width: 50%;
-  justify-content: stroke;
-}
-
-.column-1, .column-2 {
-  width: 50%;
-}
-
-.column-1 h3, .column-2 h3 {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-family: 'Inter', sans-serif;
-}
-
-.column-1 p, .column-2 p {
-  margin-bottom: 10px;
-}
-
-.column-1 a, .column-2 a {
-  color: #94a3b8;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-}
-
-.column-1 a:hover, .column-2 a:hover {
-  color: #1d4ed8; /* blue hover color */
-}
-
-/* copyright section code *
-.copyright-text {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #1e293b;
-  padding-top: 20px;
-}
-
-.copyright-text p {
-  color: #64748b;
-  font-size: 13px;
-  font-family: 'Inter', sans-serif;
-} */
+   
