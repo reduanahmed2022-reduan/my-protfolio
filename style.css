@@ -158,42 +158,364 @@ nav ul li a {
     font-size:15px;
 }
 
-                /* cart style */
+   
+                /*  pricing section*/
 
-/* .speakers2{
-     width:600px;
-     height: 1500px;
-    
-    margin:80px auto;
+
+.pricing-sec {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.sec-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.sec-header h2 {
+  font-size: 38px;
+  color: #0f172a;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.sec-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 16px;
+}
+
+.pricing-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.p-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px 24px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.p-card.is-featured {
+  border: 2px solid #1d4ed8;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* top badges */
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.badge-std { background: #e2e8f0; color: #334155; }
+.badge-pro { background: #1d4ed8; color: #fff; }
+.badge-team { background: #fef08a; color: #854d0e; }
+
+/* pricing area */
+.price-box {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+.price-box span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  display: block;
+  margin-top: 6px;
+}
+.is-featured .price-box span {
+  color: #94a3b8;
+}
+
+/* items list */
+.feat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.feat-list li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #475569;
+  padding-left: 20px;
+  position: relative;
+}
+.is-featured .feat-list li {
+  color: #cbd5e1;
+}
+
+/* bullet sign replacement */
+.feat-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* buttons custom styling */
+.btn-action {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #1d4ed8;
+  background: transparent;
+  color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: auto;
+}
+.btn-action:hover {
+  background: #1d4ed8;
+  color: #fff;
+}
+.btn-blue {
+  background: #1d4ed8;
+  color: #fff;
+}
+.btn-blue:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+
+/* Footer style */
+
+
+
+/* ফুটার সেকশনের মূল স্টাইল */
+/* ফুটারের মূল ব্যাকগ্রাউন্ড এবং প্যাডিং */
+.site-footer {
+  background-color: #0f172a; /* ডার্ক থিম কালার */
+  color: #ffffff;            /* লেখার কালার সাদা */
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ফুটারের ভেতরের কন্টেন্টকে মাঝে রাখার জন্য */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox দিয়ে লোগো বামে এবং সোশ্যাল লিংক ডানে নেওয়া হয়েছে */
+.footer-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/* লোগো ইমেজের সাইজ নিয়ন্ত্রণ করার জন্য */
+.footer-logo img {
+  height: 40px; /* আপনার প্রয়োজন অনুযায়ী হাইট পরিবর্তন করতে পারেন */
+  display: block;
+}
+
+/* সোশ্যাল আইকনগুলোর মাঝখানের দূরত্ব */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+/* আইকনগুলোর সাধারণ ডিজাইন */
+.footer-socials a {
+  color: #94a3b8; /* হালকা ধূসর কালার */
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s; /* হোভার ইফেক্ট মসৃণ করার জন্য */
+}
+
+/* মাউস নিলে আইকনের কালার পরিবর্তন হবে */
+.footer-socials a:hover {
+  color: #38bdf8; /* স্কাই ব্লু কালার */
+}
+
+/* মাঝখানের সোজা দাগ (Horizontal Divider) এর ডিজাইন */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #334155; /* লাইনের কালার */
+  margin: 30px 0 20px 0;    /* উপরে ও নিচে স্পেস */
+}
+
+/* কপিরাইট লেখাটি মাঝে নেওয়ার জন্য */
+.footer-bottom {
+  text-align: center;
+}
+
+.copyright {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* মোবাইল রেসপনসিভ: স্ক্রিন ছোট হলে লোগো ও আইকন নিচে নিচে চলে আসবে */
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+
+
+/* লোগো বামে এবং সোশ্যাল লিংক ডানে নেওয়ার জন্য ফ্লেক্সবক্স *
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* রেসপন্সিভ করার জন্য *
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* সোশ্যাল মিডিয়া আইকনের স্টাইল *
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+/* মাউস হোভার করলে কালার চেঞ্জ হবে *
+.footer-socials a:hover {
+    color: #3b82f6; /* লাইট ব্লু কালার */
+}
+
+/* হরাইজন্টাল ডিভাইডার বা বর্ডার লাইনের স্টাইল *
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #374151; /* হালকা গ্রে কালার */
+    margin: 30px 0 20px 0;
+}
+
+/* কপিরাইট মেসেজ নিচের সেন্টারে রাখার জন্য *
+.footer-bottom {
     text-align: center;
-
-}
-.speaker-info2{
-    padding:20px;
-}
-
-.speaker-info2 span{
-    color:#2f5cff;
-    font-size:12px;
-    font-weight:bold;
-    text-transform:uppercase;
-}
-
-.speaker-info2 h3{
-    margin:10px 0;
-    font-size:24px;
-}
-
-.speaker-info2 p{
-    color:#777;
-    font-size:15px;
-}
-
-.speaker-container2{
-    height: 1500px;
-}
-.speaker-card2{
-     height: 1500px;
+    font-size: 14px;
+    color: #9ca3af; /* টেক্সটের কালার একটু হালকা করা হয়েছে */
 } */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer tags style */
+/* .my-footer {
+  background-color: #0f172a; /* background color blackish *
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.footer-inside {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left-box {
+  width: 35%;
+  padding-left: 20px;
+}
+
+.footer-logo-text {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-p-tag {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-links-box {
+  display: flex;
+  width: 50%;
+  justify-content: stroke;
+}
+
+.column-1, .column-2 {
+  width: 50%;
+}
+
+.column-1 h3, .column-2 h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.column-1 p, .column-2 p {
+  margin-bottom: 10px;
+}
+
+.column-1 a, .column-2 a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.column-1 a:hover, .column-2 a:hover {
+  color: #1d4ed8; /* blue hover color */
+}
+
+/* copyright section code *
+.copyright-text {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+}
+
+.copyright-text p {
+  color: #64748b;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+} */

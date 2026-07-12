@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,39 +83,126 @@
     </div>
 </section>
 
-                             <!-- card section -->
-<!-- <section class="speakers2">
+
+
+
+
+
+
+<section class="pricing-sec">
+  <div class="sec-header">
     <h2>Secure Your Spot</h2>
-    <p>Early-bird pricing end August 15,2026.</p>
+    <p>Early-bird pricing ends August 15, 2026.</p>
+  </div>
 
-    <div class="speaker-container2">
+  <div class="pricing-wrap">
+    <!-- tier 1 -->
+    <div class="p-card">
+      <span class="badge badge-std">STANDARD</span>
+      <div class="price-box">$399 <span>per person</span></div>
+      <ul class="feat-list">
+        <li>Access to all 3 conference days</li>
+        <li>48 curated technical talks</li>
+        <li>2 workshop sessions</li>
+        <li>Networking lunch & coffee breaks</li>
+        <li>Conference swag bag</li>
+        <li>Digital recordings (30 days)</li>
+      </ul>
+      <button class="btn-action">Get Standard</button>
+    </div>
 
-        <div class="speaker-card2">
-            
-            <div class="speaker-info2">
-                <span>AI / ML</span>
-                <h3>Andrej Karpathy</h3>
-                <p>Pretraining Team, Anthropic</p>
+    <!-- tier 2 (featured) -->
+    <div class="p-card is-featured">
+      <span class="badge badge-pro">PRO</span>
+      <div class="price-box">$749 <span>per person</span></div>
+      <ul class="feat-list">
+        <li>Everything in Standard</li>
+        <li>Unlimited workshop access</li>
+        <li>Speaker meet & greet</li>
+        <li>VIP networking dinner</li>
+        <li>Lifetime recording access</li>
+        <li>1-on-1 mentorship (30 min)</li>
+      </ul>
+      <button class="btn-action btn-blue">Get Pro</button>
+    </div>
+
+    <!-- tier 3 -->
+    <div class="p-card">
+      <span class="badge badge-team">TEAM</span>
+      <div class="price-box">$5,999 <span>up to 10 people</span></div>
+      <ul class="feat-list">
+        <li>Everything in Pro (10 seats)</li>
+        <li>Dedicated team lounge access</li>
+        <li>Private workshop booking</li>
+        <li>Company logo on event page</li>
+        <li>Recruitment booth (1 day)</li>
+        <li>Priority customer support</li>
+      </ul>
+      <button class="btn-action">Contact Us</button>
+    </div>
+  </div>
+</section>
+                       <!-- Footer section -->
+ 
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- উপরের অংশ: লোগো বামে, সোশ্যাল লিংক ডানে -->
+    <div class="footer-top">
+      <div class="footer-logo">
+        <!-- এখানে src এর ভেতর আপনার লোগো ইমেজের লিংক বা পাথ বসিয়ে দিন -->
+        <a href="#"><img src="./picture/logo-mini.png" alt="DevConf 2026 Logo"></a>
+      </div>
+      
+      <div class="footer-socials">
+        <!-- ফন্ট অসাম (Font Awesome) এর আইকন ব্যবহার করা হয়েছে -->
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- মাঝখানের ডিভাইডার (বর্ডার লাইন) -->
+    <hr class="footer-divider">
+
+    <!-- নিচের অংশ: কপিরাইট মেসেজ -->
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 DEVCONF. All rights reserved.</p>
+    </div>
+    
+  </div>
+</footer>
+
+
+<!--<footer class="footer-section">
+    <div class="footer-container">
+        <!-- উপরের অংশ: লোগো এবং সোশ্যাল লিংক -->
+        
+        <!--<div class="footer-top">
+            <div class="footer-logo">
+                <h2>DEVCONF 2026</h2>
             </div>
-        </div>
-
-        <div class="speaker-card">
-           
-            <div class="speaker-info2">
-                <span>Cloud & DevOps</span>
-                <h3>Demis Hassabis</h3>
-                <p>CEO, Google DeepMind</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
+        </div> 
+        
+        <!-- মাঝখানের হরাইজন্টাল ডিভাইডার --
+         <hr class="footer-divider">
+        
+        <!-- নিচের অংশ: কপিরাইট মেসেজ --
+        <div class="footer-bottom">
+            <p>&copy; 2026 DEVCONF. All rights reserved.</p>
         </div>
+    </div>
+</footer>-->
+<!-- FOOTER END -->
 
-        <div class="speaker-card">
-           
-            <div class="speaker-info2">
-                <span>Frontend</span>
-                <h3>Gary Marcus</h3>
-                <p>Staff Engineer</p>
-            </div>
-        </div>
-   </section> -->
-  </body>
-</html>
+  
+ </body>
+</html>         
+                           
