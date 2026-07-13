@@ -340,8 +340,8 @@ nav ul li a {
   align-self: flex-start;
   margin-bottom: 20px;
 }
-.badge-std { background: #b4c8d4; color: #799ac9; }
-.badge-pro { background: #4568c7; color: #fff; }
+.badge-std { background: #a5b7c0; color: #1a66d1; }
+.badge-pro { background: #99a2bd; color: #fff; }
 .badge-team { background: #ebd746; color: #854d0e; }
 
 .price-box {
