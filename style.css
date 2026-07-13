@@ -96,7 +96,6 @@ nav ul li a {
 .register-btn2:hover {
       background-color: #86198f;
    } 
-   /* --- Header & Navigation end --- */
 
 /* Meet the Speakers styles */
 
@@ -179,7 +178,6 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
-/* Flexbox Layout for Cards */
 .pricing-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +185,6 @@ nav ul li a {
     gap: 30px;
     align-items: flex-start;
 }
-
-/* Base Card Styling */
 
 .card {
     background: #ffffff;
@@ -202,17 +198,15 @@ nav ul li a {
     flex-direction: column;
 }
 
-/* Special Highlight for Pro Card */
 .card.featured {
-    border: 2px solid #2563eb;
+    border: 2px solid #1a449e;
     position: relative;
-    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(50, 78, 238, 0.1);
 }
 
-/* Badge styling */
 .badge {
     background-color: #f1f5f9;
-    color: #475569;
+    color: #4d6f9e;
     font-size: 0.75rem;
     font-weight: bold;
     padding: 4px 12px;
@@ -223,15 +217,14 @@ nav ul li a {
 }
 
 .card.featured .badge {
-    background-color: #dbeafe;
-    color: #2563eb;
+    background-color: white;
+    color: blue;
 }
 
-/* Price Tag styling */
 .price {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #0f172a;
+    color: #2b52b4;
 }
 
 .per-person {
@@ -240,11 +233,10 @@ nav ul li a {
     margin-bottom: 25px;
 }
 
-/* Feature List styling */
 .features {
     list-style: none;
     margin-bottom: 30px;
-    flex-grow: 1; /* Makes sure buttons line up perfectly */
+    flex-grow: 1;
 }
 
 .features li {
@@ -254,7 +246,6 @@ nav ul li a {
     line-height: 1.5;
 }
 
-/* Button Styling */
 .btn {
     width: 100%;
     padding: 12px;
@@ -286,7 +277,7 @@ nav ul li a {
 }
 
 
-                /*  pricing section*/
+                /*  CARD STYLE*/
 
 
 .pricing-sec {
@@ -341,7 +332,6 @@ nav ul li a {
   color: #fff;
 }
 
-/* top badges */
 .badge {
   font-size: 11px;
   font-weight: 700;
@@ -350,11 +340,10 @@ nav ul li a {
   align-self: flex-start;
   margin-bottom: 20px;
 }
-.badge-std { background: #e2e8f0; color: #334155; }
-.badge-pro { background: #1d4ed8; color: #fff; }
-.badge-team { background: #fef08a; color: #854d0e; }
+.badge-std { background: #b4c8d4; color: #799ac9; }
+.badge-pro { background: #4568c7; color: #fff; }
+.badge-team { background: #ebd746; color: #854d0e; }
 
-/* pricing area */
 .price-box {
   font-size: 40px;
   font-weight: 700;
@@ -372,7 +361,6 @@ nav ul li a {
   color: #94a3b8;
 }
 
-/* items list */
 .feat-list {
   list-style: none;
   padding: 0;
@@ -381,7 +369,7 @@ nav ul li a {
 .feat-list li {
   font-size: 14px;
   margin-bottom: 12px;
-  color: #475569;
+  color: #457fd1;
   padding-left: 20px;
   position: relative;
 }
@@ -389,7 +377,6 @@ nav ul li a {
   color: #cbd5e1;
 }
 
-/* bullet sign replacement */
 .feat-list li::before {
   content: "✓";
   position: absolute;
@@ -398,7 +385,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* buttons custom styling */
 .btn-action {
   width: 100%;
   padding: 12px;
@@ -419,8 +405,8 @@ nav ul li a {
   color: #fff;
 }
 .btn-blue:hover {
-  background: #1e40af;
-  border-color: #1e40af;
+  background: rgb(25, 25, 202);
+  border-color: rgb(58, 58, 216);
 }  */
 
                                  /* FAQ Section */
@@ -493,8 +479,8 @@ details p{
 /* Footer style */
 
 .site-footer {
-  background-color: #0f172a; /* ডার্ক থিম কালার */
-  color: #ffffff;            /* লেখার কালার সাদা */
+  background-color: #0f172a; 
+  color: #ffffff;           
   padding: 40px 20px 20px 20px;
   font-family: Arial, sans-serif;
 }
